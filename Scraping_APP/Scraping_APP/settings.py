@@ -70,6 +70,19 @@ CORS_ALLOW_METHODS = [
     "OPTIONS",
 ]
 
+
+
+
+CORS_ALLOW_HEADERS = [
+    "Authorization",
+    "Content-Type",
+    "X-CSRFToken",
+    "Accept",
+    "Origin",
+    "User-Agent",
+]
+
+
 ROOT_URLCONF = 'Scraping_APP.urls'
 
 TEMPLATES = [
