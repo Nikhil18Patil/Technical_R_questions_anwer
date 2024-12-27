@@ -1,23 +1,32 @@
 {
-    "builds": [
-      {
-        "src": "Scraping_APP/wsgi.py",
-        "use": "@vercel/python"
-      },
-      {
-        "src": "staticfiles/**/*",
-        "use": "@vercel/static"
+  "builds": [
+    {
+      "src": "Scraping_APP/wsgi.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "staticfiles/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "./",
+      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+      "headers": {
+        "Access-Control-Allow-Origin": "*"
       }
-    ],
-    "routes": [
-      {
-        "src": "/static/(.*)",
-        "dest": "/staticfiles/$1"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "Scraping_APP/wsgi.py"
-      }
-    ]
-  }
+    },
+    {
+      "src": "/static/(.*)",
+      "dest": "/staticfiles/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "Scraping_APP/wsgi.py"
+    }
+  ]
+}
+
   
