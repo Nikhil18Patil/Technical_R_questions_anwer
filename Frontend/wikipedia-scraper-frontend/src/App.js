@@ -14,7 +14,7 @@ const App = () => {
     // Fetch available filter fields
     const fetchFields = async () => {
         try {
-            const response = await axios.get('http://127.0.0.1:8000/api/filters/');
+            const response = await axios.get('https://wiki-scraping-39w9wxfmb-nikhil18patils-projects.vercel.app/api/filters/');
             setFields(response.data.fields);
         } catch (error) {
             console.error('Error fetching fields:', error);
@@ -25,7 +25,7 @@ const App = () => {
     const fetchValues = async (field) => {
         try {
             setSelectedValues([]); // Clear previously selected values
-            const response = await axios.get(`http://127.0.0.1:8000/api/filters/?field=${field}`);
+            const response = await axios.get(`https://wiki-scraping-39w9wxfmb-nikhil18patils-projects.vercel.app/api/filters/?field=${field}`);
             setValues(response.data.values);
         } catch (error) {
             console.error('Error fetching values:', error);
@@ -41,7 +41,7 @@ const App = () => {
 
         setIsLoading(true);
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/scrape/', { urls: urls.split('\n') });
+            const response = await axios.post('https://wiki-scraping-39w9wxfmb-nikhil18patils-projects.vercel.app/api/scrape/', { urls: urls.split('\n') });
             alert(response.data.message);
         } catch (error) {
             console.error('Error during scraping:', error);
@@ -87,7 +87,7 @@ const App = () => {
           console.log('Params:', params);
           
           // Send filter request to the backend
-          const response = await axios.get('http://127.0.0.1:8000/api/filtered-results/', { params });
+          const response = await axios.get('https://wiki-scraping-39w9wxfmb-nikhil18patils-projects.vercel.app/api/filtered-results/', { params });
 
             console.log('Filtered Results:', response.data.pages);
             setPages(response.data.pages);
