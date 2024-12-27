@@ -54,7 +54,13 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+
+
+CORS_ALLOWED_ORIGINS = [
+    "https://wiki-scraping-wncq-lqs1c3mke-nikhil18patils-projects.vercel.app",
+    "http://localhost:3000",
+]
+
 ROOT_URLCONF = 'Scraping_APP.urls'
 
 TEMPLATES = [
