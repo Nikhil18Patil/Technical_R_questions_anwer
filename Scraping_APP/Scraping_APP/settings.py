@@ -59,11 +59,14 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "https://wiki-scraping-obg6-9ii4io71o-nikhil18patils-projects.vercel.app",
     "https://wiki-scraping-wncq-hyl5zcevj-nikhil18patils-projects.vercel.app",
+    "https://wiki-scraping-wncq.vercel.app"
+
 ]
 
 CORS_ORIGIN_WHITELIST = [
     "https://wiki-scraping-obg6-9ii4io71o-nikhil18patils-projects.vercel.app",
     "https://wiki-scraping-wncq-hyl5zcevj-nikhil18patils-projects.vercel.app",
+     "https://wiki-scraping-wncq.vercel.app"
 ]
 CORS_ALLOW_CREDENTIALS = False
 
