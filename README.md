@@ -11,19 +11,19 @@ output:
 \*\*\*\*\*\*\*\*\*succes message\*\*\*\*\*\*\*\*\*\*
 
 \*\*\*\*\*\*\*\*\*\*\*\*\*data\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+- John
+  - Michael
+  - Bob
+    - David
+      - Ross
+      - Joshua
+- John
+  - Michael
+  - Bob
+- David
+  - Ross
+  - Joshua
+    - Sheldon
+      - Mike
+      - Rishabh
 
-John
-  Michael
-  Bob
-    David
-      Ross
-      Joshua
-John
-  Michael
-  Bob
-David
-  Ross
-  Joshua
-    Sheldon
-      Mike
-      Rishabh
