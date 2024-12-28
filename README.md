@@ -1,13 +1,17 @@
 Installation:
+
 pip install requests
 
 run:
-python Technical_round_question.py
 
+python Technical\_round\_question.py
 
 output:
-*********succes message**********
-*************data***************
+
+\*\*\*\*\*\*\*\*\*succes message\*\*\*\*\*\*\*\*\*\*
+
+\*\*\*\*\*\*\*\*\*\*\*\*\*data\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+
 John
   Michael
   Bob
