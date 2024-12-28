@@ -57,7 +57,10 @@ MIDDLEWARE = [
 
 
 CORS_ALLOW_ALL_ORIGINS = True
-
+CORS_ORIGIN_WHITELIST = [
+    'https://wiki-scraping-wncq-hyl5zcevj-nikhil18patils-projects.vercel.app',
+    'http://127.0.0.1:8000',
+]
 CORS_ALLOW_CREDENTIALS = False
 
 CORS_ALLOW_METHODS = [
